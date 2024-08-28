@@ -1,0 +1,141 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  background-color: #e0f7fa;
+  overflow: hidden;
+}
+
+
+.app-container {
+  max-width: 100%;
+  width: 600px;
+  padding: 2rem;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: auto;
+  height: calc(100vh - 50px); 
+}
+
+/* Button styling */
+.generate-button {
+  background-color: violet;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.generate-button:hover {
+  background-color: pink;
+}
+
+/* Input styling */
+.mnemonic-input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Container for wallets */
+.wallets-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow-y: auto; 
+  margin-bottom: 60px; 
+}
+
+
+.wallet-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+
+.add-wallet-button {
+  background-color: teal;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.add-wallet-button:hover {
+  background-color: #38c44a;
+}
+
+
+.wallet-info {
+  background-color: #f0f4f8;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.wallet-info p {
+  margin: 0 0 10px;
+}
+
+/* Logo styling */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
